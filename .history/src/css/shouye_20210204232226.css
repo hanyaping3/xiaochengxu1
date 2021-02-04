@@ -1,0 +1,102 @@
+html{
+    font-size:26.67vw;
+}
+html,body,section{
+    width: 100%;
+    height: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column
+}
+header,#banner,aside,nav,main,footer{
+    width:100%
+}
+/* 头部区域 */
+header{
+    height:0.42rem;
+    /* background: #666; */
+}
+header form{
+    width:3.38rem;
+    height:0.3rem;
+    /* background: red; */
+    margin:0.06rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+} 
+form input{
+    width:2.65rem;
+    height:0.3rem;
+    outline: none;
+    border: none;
+    background: #f6f6f6 url(../img/search.png) no-repeat 0.1rem ;
+    background-size: 0.12rem;
+    border-radius: 0.15rem;
+    text-indent: 0.3rem;
+    font-size: 0.13rem
+}
+form input::-webkit-input-placeholder{
+    color: #9f9f9f
+}
+form i{
+    font-size: 0.18rem !important
+}
+/* 轮播图区域  */
+#banner{
+    height:1.53rem;
+    background: pink;
+}
+#banner img{
+    width:3.45rem;
+    height:1.38rem;
+    border-radius: 0.13rem;
+    margin-top:0.23rem
+}
+/* 文本提示区域 */
+aside{
+    height:0.6rem;
+    background: #fff;
+}
+aside div{
+    font-size: 0.15rem;
+    line-height: 0.6rem;
+    text-align: center;
+}
+/* 导航区域 */
+nav{
+    height:0.83rem;
+    background:#fff;
+    display: flex;
+    margin-bottom: 0.15rem;
+}
+nav a{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+nav img{
+    width:0.56rem;
+}
+/* 主要内容区域 */
+main{
+    flex:1;
+    background: red;
+}
+main #title{
+    height:0.49rem;
+    display: flex
+}
+#title i{
+    display: in
+    justify-content: space-between
+}
+
+/* 底部 */
+footer{
+    height:0.5rem;
+    background: khaki;
+}   

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shouye.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- 头部区域 -->
+        <header>
+            <form action="">
+                <input type="text" placeholder="请输入你要搜索的题目题干">
+                <i class="iconfont icon-richscan_icon"></i>
+                <i class="iconfont icon-tixing"></i>
+            </form>
+        </header>
+        <!-- 轮播图 -->
+        <div id="banner">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/ban1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ban1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ban1.jpg" alt="">
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 文本提示 -->
+        <aside>
+            <div>距陕西省考还有51天</div>
+        </aside>
+        <!-- 导航区域 -->
+        <nav>
+            <a href="">
+                <img src="img/n1.png" alt="">
+                <span>智能刷题</span>
+            </a>
+            <a href="">
+                <img src="img/n2.png" alt="">
+                <span>历年真题</span>
+            </a>
+            <a href="">
+                <img src="img/n3.png" alt="">
+                <span>模考大赛</span>
+            </a>
+            <a href="">
+                <img src="img/n4.png" alt="">
+                <span>申论审批</span>
+            </a>
+        </nav>
+        <!-- 主要内容区域 -->
+        <main>
+            <div id="title">
+                <span>知识点刷题</span>
+                <i class="iconfont icon-shezhi"></i>
+            </div>
+            <li>
+
+            </li>
+        </main>
+        <!-- 底部区域 -->
+        <footer>
+            <div>
+                <i class="iconfont icon-zhuye"></i>
+                <span>刷题</span>
+            </div>
+            <div>
+                <i class="iconfont icon-kechengguanli"></i>
+                <span>课程</span>
+            </div>
+            <div>
+                <i class="iconfont icon-wj-bjb"></i>
+                <span>热点</span>
+            </div>
+            <div>
+                <i class="iconfont icon-geren
+                "></i>
+                <span>个人中心</span>
+            </div>
+        </footer>
+    </section>
+    <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
