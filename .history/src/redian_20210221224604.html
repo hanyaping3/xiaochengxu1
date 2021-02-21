@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shouye.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" 怕 href="font/iconfont.css">
+</head>
+
+<body>
+    <section>
+        <!-- 头部区域 -->
+        <header>
+            <form action="">
+                <input type="text" placeholder="请输入你要搜索的题目题干">
+                <i class="iconfont icon-richscan_icon"></i>
+                <i class="iconfont icon-tixing"></i>
+            </form>
+        </header>
+        <!-- 导航区域 -->
+        <nav>
+            <li>学习园地</li>
+            <li>高分经验</li>
+            <li>推荐时评</li>
+            <li>一起背金句</li>
+            <li>申论金句</li>
+            <li>申论采点</li>
+            <li>面试积累</li>
+            <li>申论范文</li>
+            <li>面试真题</li>
+            <li>招考政策</li>
+            <li>精析时评</li>
+        </nav>
+        <!-- 主要内容区域 -->
+        <section>
+            <main id="app">
+                <li v-for="list in lists">
+                    <div id="li-left">
+                        <img v-bind:src="list.img">
+                    </div>
+                    <div id="li-right">
+                        <p>{{list.t1}}</p>
+                        <p>{{list.t2}}</p>
+                        <p>
+                            <span>{{list.t3}}</span>
+                            <span>{{list.p1}}</span>
+                            <span>{{list.p2}}</span>
+                        </p>
+                    </div>
+                </li>
+            </main>
+        </section>
+        <!-- 底部区域 -->
+        <footer>
+            <div>
+                <i class="iconfont icon-shezhi"></i>
+                <span>刷题</span>
+            </div>
+            <div>
+                <i class="iconfont icon-kechengguanli"></i>
+                <span>课程</span>
+            </div>
+            <div>
+                <i class="iconfont icon-wj-bjb"></i>
+                <span>热点</span>
+            </div>
+            <div>
+                <i class="iconfont icon-geren
+                    "></i>
+                <span>个人中心</span>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
+<script src="js/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            lists: [
+                {
+                    img: "img/t1.png",
+                    t1: "2021国考地市申论作文",
+                    t2: "2020-",
+                    t3: "1332人购买",
+                    
+                },
+                
+                
+
+            ]
+        }
+    })
+</script>
