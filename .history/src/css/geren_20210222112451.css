@@ -1,0 +1,135 @@
+html{
+    font-size:26.67vw;
+}
+html,body,section{
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7
+}
+section{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+header,#banner,aside,nav,main,footer{
+    width:100%
+}
+/* 头部 */
+header{
+    height: 2.1rem;
+    position: relative;
+}
+header #beijing{
+    height: 0.73rem;
+    background: #4da76a
+}
+header #texbox{
+    width:3.45rem;
+    height:1.68rem;
+    border-radius: 0.1rem;
+    position: absolute;
+    bottom: 0;
+    left:0.15rem;
+    background: #fff
+}
+#gereninfo{
+    height:0.85rem;
+    display: flex;
+    font-size: 0.12rem;
+    padding:0.15rem;
+    box-sizing: border-box
+}
+#info-left{
+    width:0.85rem;
+}
+#info-left img{
+    width:0.55rem
+}
+#info-right{
+    width:2.4rem
+}
+#info-right #dianhua{
+    font-weight: bolder
+}
+#info-right #info-jian{
+    height:0.13rem;
+    background: url(../img/m2.png) right no-repeat
+}
+#info-right #ming{
+    color: #666;
+    font-size: 0.1rem
+}
+#gerenjilu{
+    height:0.82rem;
+    display: flex;
+}
+#gerenjilu li{
+    width:33.3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#gerenjilu li i{
+    font-size: 0.18rem;
+    font-weight: bolder
+}
+#gerenjilu li p{
+    font-size: 0.11rem;
+    color: #aeaeae
+}
+ 
+
+
+/* 主要内容区域 */
+main{
+    flex:1;
+    background: pink
+}
+main>div>p{
+    font-size:0.14rem;
+    font-weight: bolder;
+    padding: 0.2rem
+}
+main>div>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+main>div>div li{
+    width:25%;
+    height:0.67rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+
+}
+main>div>div img{
+    width:0.23rem
+}
+main>div>div span{
+    font-size: 0.14rem
+}
+
+/* 底部区域 */
+footer{
+    height:0.5rem;
+    background:#f7f7f7;
+    display: flex;
+}   
+footer div{
+    width:25%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   text-align: center
+}
+footer div:hover{
+    color: #4da76a
+}
+footer div i{
+    font-size: 0.26rem !important
+}
+footer span{
+    font-size: 0.1rem
+}
